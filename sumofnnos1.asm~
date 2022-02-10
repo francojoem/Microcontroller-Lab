@@ -1,0 +1,13 @@
+ORG 0000h
+    LJMP main
+    ORG 0x40h
+main:
+    MOV R0,#0Ah      ; N value
+    MOV B,R0
+    INC R0
+    MOV A,R0
+    MUL AB           ; n(n+1)
+    MOV B,#02h
+    DIV AB           ; n(n+1)/2
+    MOV R4,A         ; Final result is stored in register R4
+end

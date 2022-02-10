@@ -1,0 +1,11 @@
+MOV r0,#020H
+MOV r1,#0DEH
+MOV A,r0
+add A,r1
+MOV 26H,A 
+MOV r2,#0ABH
+MOV r3,#065H
+MOV A,r3
+add A,r2
+MOV 25H,A
+end

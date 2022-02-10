@@ -1,0 +1,6 @@
+MOV A, #0E7H;
+MOV B, #8DH ;
+MUL AB;
+MOV R0, A
+MOV R0, B
+END

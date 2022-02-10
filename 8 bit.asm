@@ -1,0 +1,5 @@
+MOV r0,#25H
+MOV 26H,#56H
+MOV A,r0
+ADD A,26H
+end
